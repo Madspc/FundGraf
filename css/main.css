@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+body {
+    background: #1E1E23;
+    color: white;
+    font-family: 'Sansita', sans-serif;
+}
+
+
+/*Span e Inicio de pagina*/
+
+.cont-estyle {
+    background: white;
+    color: #1E1E23;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*Fin*/
+
+
+/*Menu e iconos*/
+
+
+/*Fin Menu e Icono*/
+
+.Moti-Estilo {
+    color: #F63B01;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: 100;
+    padding: 5% 20% 5% 20%;
+}
+
+
+/*Valores - Mision - Vision*/
+
+.Valores {
+    color: white;
+    text-align: center;
+    height: 250px;
+    border-width: 5px;
+}
+
+.Titulo {
+    text-align: center;
+    color: #28B7F1;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.icon {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Elemento para brillar */
+
+.icon:after {
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 500%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+}
+
+
+/* Efecto hover */
+
+.icon:hover:after {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+}
+
+
+/* Active state */
+
+.icon:active:after {
+    opacity: 0;
+}
+
+​
+/*Estilo y funciones en Informacion personal*/
+
+.flip-container {
+    perspective: 1000px;
+}
+
+
+/* flip the pane when hovered */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    display: block;
+    width: auto;
+    height: 250px;
+}
+
+
+/* flip speed goes here */
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+/* hide back of pane during swap */
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 5px;
+    left: 80px;
+}
+
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.descripcion {
+    text-align: justify;
+    font-size: 18px;
+    margin: 5% 5% 5% 5%;
+    font-family: Josefin Slab;
+}
+
+
+/*Contacto*/
+
+.Icono {
+    width: 50%;
+    margin: 5% 0% 0% 30%;
+    border-bottom: 5px rgb(246, 59, 1) solid;
+}
+
+
+/*Fin*/
+
+
+/*Pie de página*/
+
+.MiFooter {
+    background: white;
+    color: #1E1E23;
+    font-size: smaller;
+    width: 100%;
+    text-align: center;
+}
+
+
+/**/
